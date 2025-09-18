@@ -1,0 +1,14 @@
+START
+PROMPT user for Celsius temperature
+CALCULATE Fahrenheit = (Celsius × 9/5) + 32
+DISPLAY Fahrenheit
+END
+
+START
+PROMPT user for grade
+IF grade >= 50 THEN
+   DISPLAY "Pass"
+ELSE
+   DISPLAY "Fail"
+ENDIF
+END
