@@ -1,0 +1,8 @@
+1. Which conditional structure felt hardest to use?
+The hardest for me was the nested if structure, because I had to carefully keep track of which conditions belonged inside others. Sometimes it was tricky to line them up correctly without mixing the logic.
+
+2. Did trace tables help you predict results before running the code?
+Yes, trace tables helped a lot. They made it easier to follow each condition step by step and see which branch the program would take, especially when more than one condition was involved.
+
+3. What new thing did you discover in this lab?
+I discovered how I can combine conditions using boolean operators (and/or) to shorten code, instead of writing many nested ifs. I also learned that small changes in order of conditions can change the program’s outcome.
