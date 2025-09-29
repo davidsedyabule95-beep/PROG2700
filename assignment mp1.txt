@@ -1,0 +1,7 @@
+| Current Balance | Withdrawal | Condition Checked              | Output                    |
+| --------------- | ---------- | ------------------------------ | ------------------------- |
+| 500             | 200        | Valid (200 > 0 and 200 ≤ 500)  | New balance: 300          |
+| 500             | 600        | 600 > 500 (insufficient funds) | Error: Insufficient funds |
+| 500             | -50        | -50 ≤ 0 (invalid withdrawal)   | Error: Invalid withdrawal |
+| 100             | 100        | Valid (exact balance)          | New balance: 0            |
+| 1000            | 0          | 0 ≤ 0 (invalid withdrawal)     | Error: Invalid withdrawal |
