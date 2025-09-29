@@ -1,0 +1,1 @@
+The trickiest part was setting up the conditions so the program handled mistakes like withdrawing zero or too much. The trace table helped me spot those cases before coding, which made things easier. I’d explain it to a friend as a simple ATM: you enter your balance and how much you want, and it either shows your new balance or an error.
