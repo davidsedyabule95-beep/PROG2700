@@ -1,0 +1,13 @@
+BEGIN
+    PROMPT user for current_balance
+    PROMPT user for withdrawal_amount
+
+    IF withdrawal_amount <= 0 THEN
+        DISPLAY "Error: Invalid withdrawal"
+    ELSE IF withdrawal_amount > current_balance THEN
+        DISPLAY "Error: Insufficient funds"
+    ELSE
+        new_balance = current_balance - withdrawal_amount
+        DISPLAY "New balance: ", new_balance
+    ENDIF
+END
