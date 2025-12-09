@@ -1,3 +1,5 @@
+import csv
+
 def task_a_daily_log():
     """Task A: Daily summary writer"""
     print("\n" + "="*50)
