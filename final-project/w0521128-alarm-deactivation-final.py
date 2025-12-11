@@ -1,5 +1,4 @@
 # Alarm Deactivation System
-# PROG1700 - Logic & Programming
 
 def read_passcodes():
     """Read valid passcodes from passwords.txt file"""
