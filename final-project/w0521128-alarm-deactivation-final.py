@@ -20,7 +20,7 @@ def is_valid_number(user_input):
 def main():
     # ----- Start / Initialization -----
     alarm_status = "off"
-    alarm_activated_status = "off"   # corrected based on teacher's mistake
+    alarm_activated_status = "off"   # You said teacher's correction: must be OFF
     password_attempts = 3
 
     # Load password list from file
@@ -32,27 +32,27 @@ def main():
         print("Enter your 5 digit password:")
         user_input = input().strip()
 
-        # Validate length + digits
+        # Convert ASCII keyboard input to number (flowchart wording)
+        # Here it simply stays as a string, but validation checks digits.
         if not is_valid_number(user_input):
             print("Invalid Password")
             password_attempts -= 1
-            if password_attempts > 0:
-                print("You have", password_attempts, "attempts remaining.")
             continue
 
-        # Check password against file
-        if user_input in password_list:
-            # Password Match
-            alarm_status = "off"
-            alarm_activated_status = "off"
-            print("Alarm Status:", alarm_status)
-            print("Alarm Activated Status:", alarm_activated_status)
-            return
-        else:
-            print("Invalid Password")
-            password_attempts -= 1
-            if password_attempts > 0:
-                print("You have", password_attempts, "attempts remaining.")
+        # Valid 5-digit number, now check attempts
+        if password_attempts <= 3:
+            # Create password list already loaded from file
+            # Check password
+            if user_input in password_list:
+                # Password Match
+                alarm_status = "off"
+                alarm_activated_status = "off"
+                print("Alarm Status:", alarm_status)
+                print("Alarm Activated Status:", alarm_activated_status)
+                return
+            else:
+                print("Invalid Password")
+                password_attempts -= 1
 
     # ----- If user failed all 3 attempts -----
     alarm_status = "on"
